@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: librarynewsapi
+
+newsapi:
+  client:
+    url: https://newsapi.org
+    apikey: [COLOCAR A APIkEY PARA SER UTILIZADO NA APLCIACAO]
