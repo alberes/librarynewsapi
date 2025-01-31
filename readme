@@ -1,1 +1,23 @@
+Após baixar o projeto:
 
+1 - Obter a credencia no https://newsapi.org/
+2 - Localizar o arquivo application.yml
+3 - Configurar a propriedade apikey com a credencial
+newsapi:
+  client:
+    url: https://newsapi.org
+    apikey: COLCOAR_ACREDENCIAL_APIkEY
+
+Exemplos das chamadas:
+
+Foram disponibilizados dois recursos /everything/authors e /top-headlines/authors, abaixo os exemplos das chamadas:
+
+curl --location 'http://localhost:8080/newsapi/v1/everything/authors?q=apple&from=2025-01-30&to=2025-01-30&sortBy=popularity'
+
+curl --location 'http://localhost:8080/newsapi/v1/everything/authors?q=tesla&from=2024-12-31&sortBy=publishedAt'
+
+curl --location 'http://localhost:8080/newsapi/v1/top-headlines/authors?country=us&category=business'
+
+curl --location 'http://localhost:8080/newsapi/v1/top-headlines/authors?country=us&category=business'
+
+curl --location 'http://localhost:8080/newsapi/v1/everything/authors?domains=wsj.com'
